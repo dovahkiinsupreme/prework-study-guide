@@ -9,7 +9,7 @@
   <body>
     <header id="header">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./assets/b2spirit.jpg" alt="B2 Spirit Stealth Bomber" />
     </header>
     <main>
       <section class="card" id="html-section">
@@ -31,6 +31,36 @@
         <ul>
           <li>Git status: checks what branch we are currently on.</li>
           <li>Git checkout -b branch name: creates a new branch and switches to it</li>
+          <li>Git process to start a new working branch after navigating to correct directory:</li>
+          <ol>
+            <li>git checkout main</li>
+            <li>git checkout -b branch-name  -  creates a new branch with specified name</li>
+            <li>git status  -  confirming that working on newly created branch</li>
+            <li>code .  -  opens VS code program with new working branch</li>
+          </ol>
+          <li>Git process after work is completed on new branch:</li>
+          <ol start="5">
+            <li>Ensure on correct branch from the command line</li>
+            <li>git add -A  -  adds/commits all files in the working branch/directory to the staging area of Git</li>
+            <li>git commit -m  -  commits them to the repository while the -m flag associates a brief message with the commit</li>
+            <li>git pull origin main  -  a check to ensure branches are in sync</li>
+            <li>git push origin branch-name  -  pushes changes to GitHub</li>
+          </ol>
+          <li>GitHub process after pushing changes from GitBash:</li>
+          <ol start="10">
+            <li>Switch branch to the one just added</li>
+            <li>Click pull requests tab</li>
+            <li>Click "New Pull Request"</li>
+            <li>Compare added branch with main branch to view changed items</li>
+            <li>Click "Create pull request"</li>
+            <li>Add a description of the changes made in this branch and click "Create pull request" again</li>
+            <li>Click "Merge pull request" and again to confirm</li>
+          </ol>
+          <li>Git process to update the local repository with the newly merged feature:</li>
+          <ol start="18">
+            <li>git checkout main</li>
+            <li>git pull origin main</li>
+          </ol>
         </ul>
       </section>
       <section class="card" id="javascript-section">
